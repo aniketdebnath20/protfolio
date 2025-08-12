@@ -2,55 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-// import heroImage from "@/assets/hero-bg.jpg";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import WordAnimator from "@/components/wordanimation";
 
 const Hero = () => {
-    const [displayText, setDisplayText] = useState("");
-    const [currentPhase, setCurrentPhase] = useState(0);
-
-    const texts = ["Frontend Developer", "Freelancer"];
 
     const scrollToSection = (id: string) => {
         document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     };
-
-    useEffect(() => {
-        let index = 0;
-        let currentTextIndex = 0;
-
-        const animateText = () => {
-            const timer = setInterval(() => {
-                if (currentTextIndex < texts.length) {
-                    const currentText = texts[currentTextIndex];
-
-                    if (index <= currentText.length) {
-                        if (currentTextIndex === 0) {
-                            setDisplayText(currentText.slice(0, index));
-                        } else {
-                            setDisplayText(texts[0] + " & " + currentText.slice(0, index));
-                        }
-                        index++;
-                    } else {
-                        // Move to next text
-                        currentTextIndex++;
-                        index = 0;
-
-                        if (currentTextIndex >= texts.length) {
-                            clearInterval(timer);
-                        }
-                    }
-                }
-            }, 100);
-
-            return timer;
-        };
-
-        const timer = animateText();
-        return () => clearInterval(timer);
-    }, []);
 
     return (
         <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
