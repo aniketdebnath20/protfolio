@@ -11,40 +11,41 @@ const Projects = () => {
   const titleAnimation = useScrollAnimation({ threshold: 0.2 });
   const projectsAnimation = useScrollAnimation({ threshold: 0.1 });
 
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce platform built with React, TypeScript, and Stripe integration. Features include product catalog, shopping cart, and secure checkout.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Stripe", "Node.js"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["Next.js", "React", "MongoDB", "Socket.io", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "An interactive weather dashboard displaying current conditions, forecasts, and weather maps with beautiful data visualizations.",
-      technologies: ["Vue.js", "Chart.js", "Weather API", "CSS Grid", "JavaScript"],
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing web development projects with smooth animations and modern design principles.",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite", "TypeScript"],
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-      github: "#",
-      demo: "#"
-    }
-  ];
+const projects = [
+  {
+    title: "Library Management",
+    description: "A comprehensive system for managing books, users, and transactions in a library. Includes features like book cataloging, user registration, borrowing/return tracking, and admin controls.",
+    technologies: ["Next js", "TypeScript", "Tailwind CSS", "Prisma", "Drizzle", "Imagekit"],
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+    github: "https://github.com/aniketdebnath20/library_management",
+    demo: "#"
+  },
+  {
+    title: "Social Media Platform",
+    description: "A full-featured social networking app where users can create posts, like, comment, follow others, and get real-time notifications with a responsive and modern UI.",
+    technologies: ["Next.js", "TypeScript", "Prisma", "Imagekit", "Tailwind CSS", "Shadcn" ],
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+    github: "https://github.com/aniketdebnath20/Full_Stack_Social_Media",
+    demo: "#"
+  },
+  {
+    title: "Expense Tracker App",
+    description: "A simple yet powerful application to track daily expenses, categorize spending, set budgets, and view detailed analytics with charts and summaries.",
+    technologies: ["React-Native", "Firbase", "", "", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
+    github: "https://github.com/aniketdebnath20/Expanse-Traker_native",
+    demo: "#"
+  },
+  {
+    title: "Portfolio Website",
+    description: "A sleek, responsive portfolio website to showcase personal projects, skills, and contact information, enhanced with smooth animations and modern styling.",
+    technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite", "TypeScript"],
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
+    github: "#",
+    demo: "#"
+  }
+];
+
 
   return (
     <section id="projects" className="py-20 px-6 bg-muted/30">
