@@ -51,14 +51,14 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Button
+              <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className="text-foreground hover:text-primary transition-colors relative group"
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
-              </Button>
+              </button>
             ))}
             <ThemeToggle />
           </div>
@@ -86,7 +86,7 @@ const Navigation = () => {
                 className="block w-full text-left px-4 py-2 text-foreground hover:text-primary hover:bg-muted/50 transition-colors"
               >
                 {item.label}
-              </Button>
+              </button>
             ))}
           </div>
         )}
