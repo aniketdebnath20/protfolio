@@ -80,7 +80,7 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-background/95 backdrop-blur-md rounded-lg shadow-elegant animate-fade-in">
             {navItems.map((item) => (
-              <Button
+              <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className="block w-full text-left px-4 py-2 text-foreground hover:text-primary hover:bg-muted/50 transition-colors"
