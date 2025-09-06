@@ -22,10 +22,8 @@ const App = () => {
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <div className="relative min-h-screen">
         <IntroAnimation isVisible={isIntroVisible} />
         <Index isVisible={!isIntroVisible} />
-      </div>
     </TooltipProvider>
   );
 };

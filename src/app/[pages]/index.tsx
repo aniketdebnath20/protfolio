@@ -13,12 +13,7 @@ type LandingContentProps = {
 
 const Index = ({ isVisible }: LandingContentProps) => {
   return (
-    <div
-      className={cn(
-        "min-h-screen",
-        isVisible ? "animate-fade-in-zoom" : "animate-fade-out-zoom"
-      )}
-    >
+    <div className={cn(isVisible ? "opacity-100" : "opacity-0", "transition-opacity duration-500")}>
       <Navigation />
       <Hero />
       <About />
